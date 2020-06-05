@@ -45,14 +45,14 @@
 
     py PortDiscover.py
     [-i IP(0.0.0.0-255.255.255.255)]
-    [-p port_scope(1-65535)|top_num(50,100,default=1000)]
+    [-p port_scope(1-65535)|default=1000]
     [-t thread_num(default = 10)]
 
     or
 
     py PortDiscover.py 
     [-u url(http/https)] 
-    [-p [port_scope(1-65535)|top_num(50,100,default=1000)]]
+    [-p [port_scope(1-65535)|default=1000]]
     [-t thread_num(default = 10)]
 
 ##基本使用##

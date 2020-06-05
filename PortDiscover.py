@@ -202,7 +202,7 @@ ______          _  ______ _
     # 做域名解析
     # 得到主机ip
     
-    def get_ip_by_name(self, domain):
+    def get_ip(self, domain):
 
         domain = (domain.replace("http://","")).replace("https://","")
         print(domain)
@@ -260,7 +260,7 @@ def main():
                 top = args[4]
 
         elif args[1] == "-u" and args[3] == "-p" and args[5] == "-t":
-            ip = port_scanner.get_ip_by_name(args[2])
+            ip = port_scanner.get_ip(args[2])
             thread_num = args[6]
             if args[4].find("-")!=-1:
                 split = port_scanner.split()
@@ -280,7 +280,7 @@ def main():
             else:
                 top = args[4]
         elif args[1] == "-u" and args[3] == "-p":
-            ip = port_scanner.get_ip_by_name(args[2])
+            ip = port_scanner.get_ip(args[2])
             if args[4].find("-")!=-1:
                 split = port_scanner.split()
                 start_port = split[0]
